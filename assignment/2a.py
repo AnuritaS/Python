@@ -1,3 +1,14 @@
+#Finding the most popular friend from dictionaries
+'''Individual Student Friend Rating Score Dictionaries, (Construct a min of 10 student dictionaries)
+Score 1 is lowest and Score of 5 is highest. Every student rates all the other students. So each dictionary has 9 elements.
+
+Example with 3 students,
+sam_friends = {“Bob”:3, “Raj”:5}
+bob_friends = {“Sam”:5,”Raj”:1}
+raj_friends = {“Sam”:3,”Bob”:5}
+
+Find who has the highest score and that student is the most popular friend. Print the most popular friend and his/her score.'''
+
 from collections import Counter
 def famous():
     sam = {"Bob":3, "Raj":5, "adi":4,"anu":5,"bhanu":3,"eww":2,"hii":2,"am":1,"nonu":1}

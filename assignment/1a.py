@@ -1,3 +1,5 @@
+#Get a list of numbers from the user, till he types “end”. Write two functions “bubble_sort” and “insertion_sort”, to sort the function using bubble sort and insertion sort. Arguments to the function would be user entered list. The function returns the sorted list according to the algorithm.
+
 def bubble(a):
     length = len(a)
     for i in range(length):

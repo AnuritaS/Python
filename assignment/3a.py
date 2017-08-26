@@ -1,3 +1,9 @@
+#Define a class named “Time”, with instance attributes hours, minutes and seconds. The class consists of below method, apart from constructor
+'''input_values() – Gets the values of attributes from the user.
+print_details() – Prints the values of the attributes
+
+Overload the operators “+” and “-“ to add and subtract the corresponding attribute values and print accordingly.'''
+
 import math
 class Time:
     hr=0

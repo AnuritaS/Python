@@ -1,3 +1,16 @@
+'''Write a parent class “Polygon”. This class has two attributes
+no_of_sides  - represent the number of sides . This is passed as argument to the constructor when the object is getting created.
+sides – is a list representing the value of the sides, initialise the value of sides to 0 in constructor
+The class has two methods
+input_sides() – Gets the sides from the user. This method would display messages like
+“Enter the value for side1”
+“Enter the value for side2”
+….
+“Enter the value for siden”
+and gets the values for the sides from the user and populates the list.
+print_sides() – Prints the values of the sides
+Create a child class called Triangle, that calls the Parent class constructor with 3 as the number of sides. The child class has one additional method “findArea”, that finds the area of the triangle using the formula – (side1+side2+side3)/2
+'''
 class Polygon:
     no_side=0
     sides=[]
