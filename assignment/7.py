@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 import sys
 import cgi
-
-form = cgi.FieldStorage()
-w = form['first'].value
-w1 = form['second'].value
 print('Content-type: text/html\r\n\r\n')
 print('<html>')
 print('<table border=1>')
+form = cgi.FieldStorage()
+w = form['first'].value
+w1 = form['second'].value
 print('<tr>')
 print('<th>Authorname</th>')
 print('<th>BOOKNAME</th>')
@@ -31,13 +30,9 @@ text = """Content-type: text/html\r\n\r\n
 
 <body>
 </html>"""
-
-try:
-    ViewerType=form['ViewerType'].value
-except KeyError:
-    pass
 print(text)
-'''!/usr/bin/env python3.4'''
+
+'''#!/usr/bin/env python3.4'''
 from http.server import HTTPServer, CGIHTTPRequestHandler
 
 srv = HTTPServer(('', 80), CGIHTTPRequestHandler)
