@@ -11,3 +11,4 @@ cur.execute(cmd1)
 cur.execute(cmd)
 for i in cur.fetchall():
     print(i)
+

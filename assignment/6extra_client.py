@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+'''
+Implement a UDP server and client program. It is a echo client program. The message typed by the client should be echoed back to the client by the server. Each client connection should be handled by a thread.
+'''
 import socket
 import sys
 

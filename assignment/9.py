@@ -1,3 +1,6 @@
+'''
+Create the below table in SQLite. Perform insert, update and delete rows depending on user choice.Write separate python script for table creation. Write additional script for the above actions, based on user input.
+'''
 import sqlite3
 conn=sqlite3.connect("database1.db")
 curs=conn.cursor()

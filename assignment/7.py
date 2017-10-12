@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+'''
+Create a web application to query the data base (Book database mentioned in experiment 5). Get the Book Name or Author Name from the user (two text boxes). When the user clicks Submit (button), fetch the query results and display it in a table. Write a local server that processes the CGI scripts.
+'''
 import sys
 import cgi
 print('Content-type: text/html\r\n\r\n')

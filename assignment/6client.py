@@ -1,4 +1,6 @@
 #!/usr/bin/python
+'''Write a TCP/IP server and client program. It is a echo client program. The message typed by the client should be echoed back to the client by the server. Each client connection should be handled by a thread.
+'''
 from socket import *
 import time
 client_socket = socket(AF_INET,SOCK_STREAM)
