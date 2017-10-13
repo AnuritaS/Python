@@ -1,3 +1,6 @@
+'''
+Get a list of number from the user (unsorted). Construct max and min heap from the unsorted list and output the list for min and max heap.
+'''
 import heapq
 class MaxHeapObj(object):
   def __init__(self,val): self.val = val
@@ -20,18 +23,12 @@ class MaxHeap(MinHeap):
 minh = MinHeap()
 maxh = MaxHeap()
 # add some values
-minh.heappush(12)
-maxh.heappush(12)
-maxh.heappush(22)
-maxh.heappush(32)
-maxh.heappush(1)
-minh.heappush(44)
-minh.heappush(56)
-minh.heappush(8)
-minh.heappush(4)
-maxh.heappush(4)
-# fetch "top" values
+value = [x for x in input("Enter values:").split()]
+for v in value:
+  minh.heappush(v)
+  maxh.heappush(v)
 
 # fetch and remove "top" values
-for i in range(len(minh)):
-    print(minh.heappop(),maxh.heappop()) # "4 12"
+print('MinHeap and MaxHeap:')
+for i in range(len(value)):
+    print(minh.heappop(),'       ',maxh.heappop())

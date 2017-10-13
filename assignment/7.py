@@ -23,7 +23,7 @@ print('</html>')
 text = """Content-type: text/html\r\n\r\n
 <html>
 <body>
-<form action="file.py" method="post">
+<form action="7.py" method="post">
   AuthorNmae:<br>
   <input type="text" name="first"><br>
   BookNmae:<br>
@@ -31,12 +31,12 @@ text = """Content-type: text/html\r\n\r\n
   <input type="submit" value="send" name="button">
  </form>
 
-<body>
+</body>
 </html>"""
 print(text)
 
-'''#!/usr/bin/env python3.4'''
+#!/usr/bin/env python
 from http.server import HTTPServer, CGIHTTPRequestHandler
 
-srv = HTTPServer(('', 80), CGIHTTPRequestHandler)
+srv = HTTPServer(('localhost', 80), CGIHTTPRequestHandler)
 srv.serve_forever()
