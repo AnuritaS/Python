@@ -3,7 +3,7 @@
 a.	Remove the stop words from the content book.txt, referring to stopwords.txt.
 b.	Find words from book.txt that are in vocab.txt. Find the frequency of occurrence of each word.
 c.	Find the words from book.txt that are not in vocab.txt. List the words. Ask the user if these words could be added to vocab.txt.
-d.	If the user enters yes, append the new words to vocab.txt, else end the program.
+d.	If the user enters yes, append the new words to vocab.txt, else end the program.  
 '''
 import os
 from collections import Counter
