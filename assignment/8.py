@@ -39,9 +39,12 @@ def h1():
 def h3():
     e1.delete(0, 'end')
     e2.delete(0, 'end')
+    label = lst.get(ACTIVE)
+    print(d.get(label))
+    del d[label]
 
 
-def h5(event):
+def h5():
     label = lst.get(ACTIVE)  # on list click
     print(label)
     ph = d.get(label)
